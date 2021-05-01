@@ -48,6 +48,19 @@ function MainContainer(){
         console.log('sorted: ', sorted)
         setUsers([...sorted])
     }
+    function sortNumber() {
+        const sorted = users.sort(function(item1, item2){
+            if(item1.phone > item2.phone) {
+                return -1
+            }
+            if(item1.phone > item2.phone) {
+                return 1
+            }
+            return 0
+        })
+        console.log("sorted: ", sorted)
+        setUsers([...sorted])
+    }
 
     return(
         <div className="container" style={{marginTop: "20px", marginBottom: "20px"}}>
