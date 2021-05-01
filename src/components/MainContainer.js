@@ -15,7 +15,7 @@ function MainContainer(){
     }
     function getSearchResults() {
         console.log('Searching:', search)
-        const searchedUser = users.filter(user => search.indexOf(user.name.first)> -1 || search.indexOf(user.name/last)> -1)
+        const searchedUser = users.filter(user => search.indexOf(user.name.first)> -1 || search.indexOf(user.name.last)> -1)
         console.log(searchedUser)
         setUsers(searchedUser)
     }
