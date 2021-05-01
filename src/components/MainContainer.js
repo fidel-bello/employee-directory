@@ -29,6 +29,11 @@ function MainContainer(){
     setSearch(event.target.value)   
     console.log(event.target.value)
     }
+    
+    function handleFormSubmit(event) {
+        event.preventDefault()
+        getSearchResults()
+    }
 
     return(
         <div className="container" style={{marginTop: "20px", marginBottom: "20px"}}>
