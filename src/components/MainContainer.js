@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import axios from 'axios';;
+import axios from 'axios';
 import Table from './Table';
 
 function MainContainer(){
@@ -19,6 +19,17 @@ function MainContainer(){
         console.log(searchedUser)
         setUsers(searchedUser)
     }
+
+    function clearSearch() {
+    setSearch("")
+    getRandomUsers()
+    }
+
+    function handleInputChange(event) {
+    setSearch(event.target.value)   
+    console.log(event.target.value)
+    }
+
     return(
         <div className="container" style={{marginTop: "20px", marginBottom: "20px"}}>
         {}
