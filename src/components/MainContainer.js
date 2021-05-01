@@ -35,6 +35,20 @@ function MainContainer(){
         getSearchResults()
     }
 
+    function sortEmail(){
+        const sorted = users.sort(function(item1, item2) {
+            if(item1.email < item2.email) {
+                return -1
+            }
+            if(item1.email > item2.email) {
+                return 1
+            }
+            return 0
+        })
+        console.log('sorted: ', sorted)
+        setUsers([...sorted])
+    }
+
     return(
         <div className="container" style={{marginTop: "20px", marginBottom: "20px"}}>
         {}
