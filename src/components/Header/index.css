@@ -1,6 +1,5 @@
 .wrapper {
     height: 200px;
-    background-color: rgb(206, 211, 218);
     display: flex;
     align-items: center;
     align-content: center;
@@ -15,3 +14,4 @@
     font-weight: bolder;
 
 }
+
